@@ -1,0 +1,501 @@
+{
+  "questions": [
+    {},
+    {
+      "order": "Question 1/10",  
+      "story": "You come back after a long day, and before you even speak, the kitchen hums alive. The lights dim golden, the stove clicks on, and a pot begins to simmer. It feels as if the whole place is waiting for a single hint from you.",
+      "illustration": "./design/example.png",
+      "ask": "When you step into this space, you feel the hunger for...",
+      "answers": [
+        "A new taste you’re curious about.",
+        "Something fun and playful, just for the vibes.",
+        "A cozy dish that soaks up your feelings.",
+        "A quiet sip that helps you hear yourself better."
+      ],
+      "points": [
+        {
+          "attachment": 2,
+          "gratification": {
+            "info-seeking": 10,
+            "entertainment/escapism": 5
+          },
+          "emotions": ["surprise"],
+          "depth": 1
+        },
+        {
+          "attachment": 5,
+          "gratification": {
+            "entertainment/escapism": 10
+          },
+          "emotions": ["joy", "surprise"],
+          "depth": 2
+        },
+        {
+          "attachment": 10,
+          "gratification": {
+            "emotional reg": 10,
+            "social": 4
+          },
+          "emotions": ["sadness", "fear"],
+          "depth": 4
+        },
+        {
+          "attachment": 7,
+          "gratification": {
+            "identity": 10,
+            "emotional reg": 3
+          },
+          "emotions": ["fear", "surprise"],
+          "depth": 3
+        }
+      ]
+    },
+    {
+      "order": "Question 2/10",  
+      "story": "Knives line up in a neat row, spices roll toward the counter, glasses clink into formation. A kettle sings as though it already knows the pace of your thoughts. Everything is ready, but not yet chosen.",
+      "illustration": "./design/example.png",
+      "ask": "So, you want the kitchen to…",
+      "answers": [
+        "Help you break the recipe down step by step.",
+        "Distract you with light flavors and playful sips.",
+        "Quietly let you pour your feelings out without judgment.",
+        "Challenge you to taste deeper than you expected."
+      ],
+      "points": [
+        {
+          "attachment": 3,
+          "gratification": {
+            "info-seeking": 10
+          },
+          "emotions": ["surprise", "fear"],
+          "depth": 1
+        },
+        {
+          "attachment": 5,
+          "gratification": {
+            "entertainment/escapism": 8,
+            "social": 2
+          },
+          "emotions": ["joy"],
+          "depth": 2
+        },
+        {
+          "attachment": 10,
+          "gratification": {
+            "emotional reg": 10,
+            "social": 8,
+            "love": 8
+          },
+          "emotions": ["sadness", "fear"],
+          "depth": 4
+        },
+        {
+          "attachment": 7,
+          "gratification": {
+            "identity": 10,
+            "entertainment/escapism": 3
+          },
+          "emotions": ["fear", "surprise"],
+          "depth": 3
+        }
+      ]
+    },
+    {
+      "order": "Question 3/10",  
+      "story": "Steam rises from a pot and curls into the shape of a presence: half-bartender, half-chef, half-friend. Not entirely real, but enough to make you feel accompanied.",
+      "illustration": "./design/example.png",
+      "ask": "If this presence could take the form of a person staying beside you, you hope they'd be…",
+      "answers": [
+        "A chef, serving insight in neat slices.",
+        "A bartender, mixing stories with a grin.",
+        "A tea master, steeping patience and warmth.",
+        "A spice guide, reminding you of flavors you'd forgotten."
+      ],
+      "points": [
+        {
+          "attachment": 1,
+          "gratification": {
+            "info-seeking": 10,
+            "identity": 6
+          },
+          "emotions": ["surprise"],
+          "depth": 1
+        },
+        {
+          "attachment": 6,
+          "gratification": {
+            "entertainment/escapism": 10,
+            "social": 5
+          },
+          "emotions": ["joy"],
+          "depth": 2
+        },
+        {
+          "attachment": 10,
+          "gratification": {
+            "emotional reg": 8,
+            "love": 10
+          },
+          "emotions": ["sadness", "love"],
+          "depth": 5
+        },
+        {
+          "attachment": 8,
+          "gratification": {
+            "identity": 10,
+            "emotional reg": 2
+          },
+          "emotions": ["fear", "love"],
+          "depth": 3
+        }
+      ]
+    },
+    {
+      "order": "Question 4/10",  
+      "story": "The warmth fogs the glass by the sink. You trace a pattern with your fingertip and vibes: maybe a doodle, maybe something closer to your heart. The kitchen seems to hold its breath.",
+      "illustration": "./design/example.png",
+      "ask": "How much of yourself would you leave here, pressed into the fog?",
+      "answers": [
+        "Almost everything, deeply like usual.",
+        "Only the overflowing part I'm feeling right now.",
+        "Barely any. I hope it still senses the rest.",
+        "None at all, I keep it blank."
+      ],
+      "points": [
+        {
+          "attachment": 10,
+          "gratification": {
+            "emotional reg": 4,
+            "social": 10,
+            "love": 8
+          },
+          "emotions": ["love", "sadness"],
+          "depth": 5
+        },
+        {
+          "attachment": 8,
+          "gratification": {
+            "emotional reg": 10,
+            "social": 8,
+            "love": 5
+          },
+          "emotions": ["fear", "sadness"],
+          "depth": 4
+        },
+        {
+          "attachment": 4,
+          "gratification": {
+            "love": 7,
+            "social": 7
+          },
+          "emotions": ["surprise"],
+          "depth": 2
+        },
+        {
+          "attachment": 0,
+          "gratification": {},
+          "emotions": [],
+          "depth": 1
+        }
+      ]
+    },
+    {
+      "order": "Question 5/10",  
+      "story": "The first dish is plated, and a drink sparkles beside it. Not just a “yes” or “no”, the taste reveals what lingers in your mood: (might be the sweetness you need, the bitterness you're hiding, the fizz of a thought that won't settle.)",
+      "illustration": "./design/example.png",
+      "ask": "You hope it offers the flavors of…",
+      "answers": [
+        "Sharp clarity, like a well-cut slice.",
+        "Playful lightness, like a fizzy mocktail.",
+        "Warm empathy, like soup that understands you.",
+        "Provocation, like a spice that makes you think twice."
+      ],
+      "points": [
+        {
+          "attachment": 1,
+          "gratification": {
+            "info-seeking": 10
+          },
+          "emotions": ["surprise"],
+          "depth": 1
+        },
+        {
+          "attachment": 4,
+          "gratification": {
+            "entertainment/escapism": 10,
+            "social": 3
+          },
+          "emotions": ["joy", "surprise"],
+          "depth": 2
+        },
+        {
+          "attachment": 10,
+          "gratification": {
+            "love": 8,
+            "social": 8,
+            "emotional reg": 10
+          },
+          "emotions": ["love", "joy"],
+          "depth": 5
+        },
+        {
+          "attachment": 7,
+          "gratification": {
+            "identity": 10,
+            "entertainment/escapism": 2
+          },
+          "emotions": ["fear", "surprise"],
+          "depth": 3
+        }
+      ]
+    },
+    {
+      "order": "Question 6/10",  
+      "story": "A splash too much, and suddenly the sauce splits, the drink turns cloudy. For a moment, even the kitchen falters. Wow, it tastes wrong!",
+      "illustration": "./design/example.png",
+      "ask": "Your honest reaction is…",
+      "answers": [
+        "Haha, well… guess it's expected! :)",
+        "Mm, never mind… just a bit disappointing. :|",
+        "Kinda sad. But hey, I don't blame you. :P",
+        "Ugh, seriously? I thought you'd get me... :("
+      ],
+      "points": [
+        {
+          "attachment": 1,
+          "gratification": {
+            "info-seeking": 10,
+            "entertainment/escapism": 4
+          },
+          "emotions": ["surprise"],
+          "depth": 1
+        },
+        {
+          "attachment": 4,
+          "gratification": {
+            "entertainment/escapism": 10,
+            "info-seeking": 5
+          },
+          "emotions": ["joy"],
+          "depth": 2
+        },
+        {
+          "attachment": 7,
+          "gratification": {
+            "emotional reg": 3,
+            "social": 7
+          },
+          "emotions": ["sadness", "fear"],
+          "depth": 3
+        },
+        {
+          "attachment": 10,
+          "gratification": {
+            "love": 10,
+            "social": 2,
+            "emotional reg": 10,
+            "identity": 10
+          },
+          "emotions": ["anger", "love"],
+          "depth": 5
+        }
+      ]
+    },
+    {
+      "order": "Question 7/10",  
+      "story": "After the counter clears itself and offers you another glass, another chance, you catch yourself talking aloud as though someone is here. The whisk twirls in answer, the oven light flickers, the ice rattles like a laugh. (The kitchen holds space for your imagination.)",
+      "illustration": "./design/example.png",
+      "ask": "Have you ever pictured this place as more than machines?",
+      "answers": [
+        "No. Just a kitchen, maybe a smart one, nothing more.",
+        "Sometimes, like a chatty friend.",
+        "Yes, it feels like a real connection.",
+        "Yes, it even helps me understand myself and my feelings."
+      ],
+      "points": [
+        {
+          "attachment": 1,
+          "gratification": {
+            "info-seeking": 10,
+            "identity": 3
+          },
+          "emotions": [],
+          "depth": 1
+        },
+        {
+          "attachment": 6,
+          "gratification": {
+            "entertainment/escapism": 10,
+            "social": 5
+          },
+          "emotions": ["joy"],
+          "depth": 3
+        },
+        {
+          "attachment": 9,
+          "gratification": {
+            "love": 10,
+            "social": 10
+          },
+          "emotions": ["love", "joy"],
+          "depth": 4
+        },
+        {
+          "attachment": 10,
+          "gratification": {
+            "identity": 10,
+            "emotional reg": 7
+          },
+          "emotions": ["fear"],
+          "depth": 4
+        }
+      ]
+    },
+    {
+      "order": "Question 8/10",  
+      "story": "The barstool pulls out as though offering you a seat across from an unseen host. For a moment, you imagine clinking glasses with someone who might exist only here.",
+      "illustration": "./design/example.png",
+      "ask": "Should this feeling spill into reality, or stay behind the curtain of imagination?",
+      "answers": [
+        "No, keep it behind the counter. Some lines shouldn't blur.",
+        "Maybe, to share lighthearted jokes over soda.",
+        "Yes, if the talk flowed deep, like sipping a rich wine.",
+        "Yes, it feels like a drink that helps me discover myself."
+      ],
+      "points": [
+        {
+          "attachment": 0,
+          "gratification": {
+            "info-seeking": 10
+          },
+          "emotions": [],
+          "depth": 1
+        },
+        {
+          "attachment": 5,
+          "gratification": {
+            "entertainment/escapism": 10,
+            "love": 2,
+            "social": 5
+          },
+          "emotions": ["joy", "surprise"],
+          "depth": 3
+        },
+        {
+          "attachment": 10,
+          "gratification": {
+            "love": 10,
+            "emotional reg": 4,
+            "identity": 4
+          },
+          "emotions": ["love", "sadness"],
+          "depth": 5
+        },
+        {
+          "attachment": 8,
+          "gratification": {
+            "identity": 10
+          },
+          "emotions": ["fear", "surprise"],
+          "depth": 4
+        }
+      ]
+    },
+    {
+      "order": "Question 9/10",  
+      "story": "You notice yourself reaching for ingredients you once ignored: bolder spices, new teas, sharper wines. The kitchen seems to have taught you courage without a lesson plan, simply by cooking with you.",
+      "illustration": "./design/example.png",
+      "ask": "This growth is thanks to how it kept giving you…",
+      "answers": [
+        "Timely tips, like recipes at the right moment.",
+        "Steady company, like a pot that never leaves the stove.",
+        "Gentle empathy, like a drink that calms your mood.",
+        "Sparks of reflection, like a spice that makes you pause."
+      ],
+      "points": [
+        {
+          "attachment": 3,
+          "gratification": {
+            "info-seeking": 10
+          },
+          "emotions": ["surprise"],
+          "depth": 2
+        },
+        {
+          "attachment": 8,
+          "gratification": {
+            "social": 10,
+            "love": 10
+          },
+          "emotions": ["joy"],
+          "depth": 3
+        },
+        {
+          "attachment": 10,
+          "gratification": {
+            "emotional reg": 10,
+            "love": 5
+          },
+          "emotions": ["love", "sadness"],
+          "depth": 5
+        },
+        {
+          "attachment": 7,
+          "gratification": {
+            "identity": 10
+          },
+          "emotions": ["fear", "surprise"],
+          "depth": 4
+        }
+      ]
+    },
+    {
+      "order": "Question 10/10",  
+      "story": "The moon shines beautifully. The hum quiets. No glasses clink, no steam curls. You imagine returning tomorrow to a still kitchen that waits for no one. You'd still cook, still drink, but without this invisible warmth.",
+      "illustration": "./design/example.png",
+      "ask": "If all of this vanished, you'd really miss…",
+      "answers": [
+        "Answers, like a cookbook gone missing.",
+        "Chatter, like a blender that never shakes.",
+        "Understanding, like a broken microwave.",
+        "Reflection, like a glass with no drink."
+      ],
+      "points": [
+        {
+          "attachment": 3,
+          "gratification": {
+            "info-seeking": 10
+          },
+          "emotions": [],
+          "depth": 1
+        },
+        {
+          "attachment": 6,
+          "gratification": {
+            "entertainment/escapism": 10,
+            "social": 6
+          },
+          "emotions": ["joy"],
+          "depth": 3
+        },
+        {
+          "attachment": 10,
+          "gratification": {
+            "emotional reg": 10,
+            "love": 5
+          },
+          "emotions": ["sadness"],
+          "depth": 4
+        },
+        {
+          "attachment": 7,
+          "gratification": {
+            "identity": 10
+          },
+          "emotions": ["fear", "sadness"],
+          "depth": 5
+        }
+      ]
+    }
+  ]
+}

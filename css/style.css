@@ -1,0 +1,279 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.22px;
+}
+
+
+body {
+  background-color: #fffaee;
+  height: 100vh; /* full screen height */
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+}
+
+.main {
+  aspect-ratio: 640 / 1024; /*figma scale*/
+  height: 1024px; /* don’t exceed design */
+  max-width: 640px;
+  width: auto; /* width adjusts automatically */
+  margin: auto;
+
+  /* Padding scaled from Figma (28px top/bottom, 20px left right) */
+  padding: 28px 20px;
+}
+
+.container {
+  /* Stack children vertically with gap */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px/* 24px in Figma, scales with width */
+}
+
+.copy-right {
+  font-size: 14px;
+}
+
+.illustration {
+  display: flex;
+  justify-content: center;
+}
+
+.illustration img {
+  height: 300px;
+  width: auto;
+}
+
+
+/* FONT */
+.title-font {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*/////////////// Start Page ///////////////// */
+#start-page {
+  justify-content: center;
+  height: 100%;
+}
+
+#start-container {
+  gap: 40px
+}
+
+#start-content {
+  gap: 11px
+}
+
+#start-content .title-font {
+  font-size: 36px;
+}
+
+#start-illustration img {
+  height: 400px;
+}
+
+#start-button-container {
+  gap: 20px;
+}
+
+.other-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#start-button-container .button {
+  text-align: center;
+  padding: 14px 48px 14px 48px;
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.other-button-container .button {
+  flex: 1;
+}
+
+/*////////////// Welcome Page ////////////*/
+#welcome-page {
+  display: none
+}
+
+#welcome-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45.68px;
+}
+
+#welcome-title div{
+  border-radius: 100px;
+  background-color: #fff0cc;
+  display: flex;
+  padding: 0 28px;
+  align-items: center;
+  justify-content: center;
+  height: 100%
+}
+
+#welcome-container {
+  gap: 40px;
+}
+
+#welcome-content-container {
+  gap: 11px
+}
+
+#special-line {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+#welcome-button {
+  text-align: center;
+  padding: 14px 48px 14px 48px;
+}
+
+/*////////////// Quiz Page ////////////*/
+#quiz-page {
+  display: none;
+}
+
+#question-progress, #end-quiz-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45.68px;
+}
+
+#back-button, #back-to-quiz-button {
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+}
+
+#question-number, #end-quiz {
+  border-radius: 100px;
+  background-color: #fff0cc;
+  height: 100%;
+  display: flex;
+  padding: 0 28px;
+  align-items: center;
+  justify-content: center;
+}
+
+#question-content-container, #end-content-container {
+  gap: 11px;
+}
+
+#question-ask {
+  font-size: 24px;
+}
+
+#answer-container {
+  gap: 20px;
+}
+
+
+/*////////////// END QUIZ PAGE ///////////*/
+#end-quiz-page {
+  display: none;
+}
+
+#end-quiz-container {
+  gap: 40px;
+}
+
+#end-quiz-button {
+  text-align: center;
+  padding: 14px 48px 14px 48px;
+}
+
+/*////////////// RESULT PAGE /////////////*/
+#result-page {
+  display: none;
+}
+
+
+
+#result-illustration img {
+  height: 820px;
+}
+
+#result-button-container, #result-content-container {
+  gap: 20px;
+}
+
+#result-button-container .button {
+  text-align: center;
+  padding: 14px 48px 14px 48px;
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*/////////////// Buttons ///////////////// */
+
+.button {
+  background-color: #FFF0CC;
+  border-radius: 50px;
+  box-shadow: 2px 2px 0 4px black;
+  text-align: left;
+  padding: 20px 83px 20px 48px;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.25s;
+  cursor: pointer;
+  display: grid;
+}
+
+.button p {
+  grid-area: 1/1;
+  z-index: 2;
+}
+
+.button img{
+ position: absolute;
+ bottom: -20px;
+ right: 48px;
+ grid-area: 1/1;
+ z-index: 1;
+}
+
+.hover-img {
+  display: none;
+}
+
+.button:hover {
+  background-color: #FFE099;
+  box-shadow: inset 2px 2px 0 4px black;
+}
+
+.button:hover .not-hover-img {
+  display: none
+}
+
+.button:hover .hover-img {
+  display: block;
+  clip-path: inset(0 0 22px 0)
+}
+
+
+
+
+
+
