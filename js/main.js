@@ -195,8 +195,10 @@ function analyzeArchetype(user_archetype, archetypeData) {
 
   $("#result-illustration img").each(function () {
     let img_type = $(this).attr("data-type");
-    if (user_archetype_result == img_type) {
+    if (user_archetype_result == img_type) {//////comparing archetype illustration - user result
       $(this).css("display", "flex");
+      let download_link= `<a href="${$(this).attr("src")}" class="title-font" download="Bot_Appétit_Result.png"> Download </a>`
+      $("#download-button").html(download_link);
     } else {
       $(this).css("display", "none");
     }
@@ -275,6 +277,8 @@ function ButtonControl() {
   //End page
   backToQuizButtonControl();
   endQuizButtonControl();
+
+  shareButtonControl();
 }
 
 function startButtonControl() {
@@ -339,6 +343,17 @@ function endQuizButtonControl() {
       console.log("Receive your order!");
       analyzeAnswer();
     });
+}
+
+function shareButtonControl() {
+  $(".share")
+    .off("click")
+    .on("click", function () {
+      let quizLink = "https://bot-appetit.github.io/Quiz/";
+      navigator.clipboard.writeText(quizLink).then(function() {
+      alert("Link copied! Share it with your friends 🍵✨");
+  });
+    })
 }
 
 //////// Progress Button ///////
