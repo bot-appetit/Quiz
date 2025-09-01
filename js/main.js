@@ -11,10 +11,11 @@ $(function () {
   });
 
   $.get("./quiz_data/archetypes.json", function (data) {
-    archetypeData = data; ////Assign JSON content
+    archetypeData = data; ////Assign JSON content;
+    archetypeDisplay(data);
   });
 
-  $.get("./quiz_data/education.json", function(educationData) {
+  $.get("./quiz_data/education.json", function (educationData) {
     educationContentDisplay(educationData);
   });
 
@@ -269,9 +270,24 @@ function analyzeArchetype(user_archetype, archetypeData) {
     archetype_scores[a] > archetype_scores[b] ? a : b
   );
   console.log(archetype_scores);
+  console.log(user_archetype_result)
 
-  let user_archetype_illustration = `<img src="${archetypeData[user_archetype_result].illustration}"/>`;
-  $("#result-illustration").html(user_archetype_illustration);
+  $("#result-illustration img").each(function () {
+    let img_type = $(this).attr("data-type");
+    if (user_archetype_result == img_type) {
+      $(this).css("display", "flex");
+    } else {
+      $(this).css("display", "none");
+    }
+  });
+}
+
+function archetypeDisplay(archetypeData) {
+  let resultIllustrations = "";
+  $.each(archetypeData, function (type, value) {
+    resultIllustrations += `<img data-type="${type}" src="${value.illustration}"/>`;
+  });
+  $("#result-illustration").html(resultIllustrations);
 }
 
 function educationContentDisplay(educationData) {
@@ -279,10 +295,10 @@ function educationContentDisplay(educationData) {
   let educationNumbers = "";
   for (let a = 0; a < educationData.education.length; a++) {
     educationIllustrations += `<img data-order="${a}" src="${educationData.education[a].illustration}" />`;
-    educationNumbers += `<p data-order="${a}"> ${educationData.education[a].order} </p>`
+    educationNumbers += `<p data-order="${a}"> ${educationData.education[a].order} </p>`;
   }
-  $("#education-illustration").html(educationIllustrations)
-  $("#education-number").html(educationNumbers)
+  $("#education-illustration").html(educationIllustrations);
+  $("#education-number").html(educationNumbers);
   educationContentOrder();
 
   $("#back-education-button")
@@ -290,7 +306,7 @@ function educationContentDisplay(educationData) {
     .on("click", function () {
       if (n > 0 && n < 6) {
         n -= 1;
-        educationContentOrder()
+        educationContentOrder();
       }
     });
 
@@ -307,20 +323,20 @@ function educationContentDisplay(educationData) {
 
 function educationContentOrder() {
   $("#education-illustration img").each(function () {
-      let img_order = $(this).attr("data-order");
-      if (n == img_order) {
-        $(this).css("display", "flex");
-      } else {
-        $(this).css("display", "none");
-      }
+    let img_order = $(this).attr("data-order");
+    if (n == img_order) {
+      $(this).css("display", "flex");
+    } else {
+      $(this).css("display", "none");
+    }
   });
 
   $("#education-number p").each(function () {
-      let p_order = $(this).attr("data-order");
-      if (n == p_order) {
-        $(this).css("display", "flex");
-      } else {
-        $(this).css("display", "none");
-      }
+    let p_order = $(this).attr("data-order");
+    if (n == p_order) {
+      $(this).css("display", "flex");
+    } else {
+      $(this).css("display", "none");
+    }
   });
 }
