@@ -8,7 +8,6 @@ html {
   font-size: 45%;
 }
 
-
 body {
   background-color: #fffaee;
   display: flex;
@@ -20,7 +19,7 @@ body {
   font-style: normal;
   line-height: 150%;
   letter-spacing: -0.022rem;
-  height: auto
+  height: auto;
 }
 
 .main {
@@ -37,14 +36,16 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 2.4rem/* 24px in Figma, scales with width */;
+  gap: 2.4rem /* 24px in Figma, scales with width */;
 }
 
 .copy-right {
   font-size: 1.4rem;
 }
 
-.illustration, #result-illustration, #education-illustration {
+.illustration,
+#result-illustration,
+#education-illustration {
   display: flex;
   justify-content: center;
 }
@@ -54,14 +55,12 @@ body {
   width: auto;
 }
 
-
 /* FONT */
 .title-font {
   font-family: "Seymour One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
 
 /*/////////////// Start Page ///////////////// */
 #start-page {
@@ -85,7 +84,9 @@ body {
   height: 40rem;
 }
 
-#start-button-container, #result-button-container, #education-button-container {
+#start-button-container,
+#result-button-container,
+#education-button-container {
   gap: 2rem;
 }
 
@@ -96,7 +97,9 @@ body {
   gap: 1rem;
 }
 
-#start-button-container .button, #result-button-container .button, #education-button-container .button {
+#start-button-container .button,
+#result-button-container .button,
+#education-button-container .button {
   text-align: center;
   padding: 1.4rem 4.8rem;
   font-family: "Seymour One", sans-serif;
@@ -110,7 +113,7 @@ body {
 
 /*////////////// Welcome Page ////////////*/
 #welcome-page {
-  display: none
+  display: none;
 }
 
 #welcome-title {
@@ -120,14 +123,14 @@ body {
   height: 4.57rem;
 }
 
-#welcome-title div{
+#welcome-title div {
   border-radius: 100px;
   background-color: #fff0cc;
   display: flex;
   padding: 0 2.8rem;
   align-items: center;
   justify-content: center;
-  height: 100%
+  height: 100%;
 }
 
 #welcome-container {
@@ -135,7 +138,7 @@ body {
 }
 
 #welcome-content-container {
-  gap: 1.1rem
+  gap: 1.1rem;
 }
 
 #special-line {
@@ -154,25 +157,35 @@ body {
   display: none;
 }
 
-#question-progress, #end-quiz-progress, #education-progress {
+#question-progress,
+#end-quiz-progress,
+#education-progress {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4.57rem;
 }
 
-#back-button, #back-to-quiz-button, #back-education-button, #next-education-button {
+#back-button,
+#back-to-quiz-button,
+#back-education-button,
+#next-education-button {
   height: 100%;
   width: auto;
   cursor: pointer;
 }
 
-#back-button img, #back-to-quiz-button img, #back-education-button img, #next-education-button img{
+#back-button img,
+#back-to-quiz-button img,
+#back-education-button img,
+#next-education-button img {
   height: 100%;
   width: auto;
 }
 
-#question-number, #end-quiz, #education-number {
+#question-number,
+#end-quiz,
+#education-number {
   border-radius: 100px;
   background-color: #fff0cc;
   height: 100%;
@@ -182,7 +195,8 @@ body {
   justify-content: center;
 }
 
-#question-content-container, #end-content-container {
+#question-content-container,
+#end-content-container {
   gap: 1.1rem;
 }
 
@@ -193,7 +207,6 @@ body {
 #answer-container {
   gap: 2rem;
 }
-
 
 /*////////////// END QUIZ PAGE ///////////*/
 #end-quiz-page {
@@ -209,9 +222,6 @@ body {
   padding: 1.4rem 4.8rem;
 }
 
-
-
-
 /*////////////// RESULT PAGE /////////////*/
 #result-education-page {
   display: none;
@@ -223,14 +233,13 @@ body {
 
 #result-illustration img {
   width: 64rem;
-  height: auto
+  height: auto;
 }
 
 #download-button a {
   text-decoration: none;
   color: inherit;
 }
-
 
 /*/////////////// EDUCATION PAGE ///////////////*/
 #education-title {
@@ -246,11 +255,10 @@ body {
   box-sizing: border-box;
 }
 
-
 /*/////////////// Buttons ///////////////// */
 
 .button {
-  background-color: #FFF0CC;
+  background-color: #fff0cc;
   border-radius: 50px;
   box-shadow: 0.2rem 0.2rem 0 0.4rem black;
   text-align: left;
@@ -267,38 +275,19 @@ body {
   z-index: 2;
 }
 
-.button img{
- position: absolute;
- bottom: -2rem;
- right: 4.8rem;
- grid-area: 1/1;
- z-index: 1;
- height: 7rem;
- width: auto
+.button img {
+  position: absolute;
+  bottom: -2rem;
+  right: 4.8rem;
+  grid-area: 1/1;
+  z-index: 1;
+  height: 7rem;
+  width: auto;
 }
-
-.hover-img {
-  display: none;
-}
-
-.button:hover {
-  background-color: #FFE099;
-  box-shadow: inset 0.2rem 0.2rem 0 0.4rem black;
-}
-
-.button:hover .not-hover-img {
-  display: none
-}
-
-.button:hover .hover-img {
-  display: block;
-  clip-path: inset(0 0 2.2rem 0)
-}
-
 
 /*/////////////// PHONE VERSION ///////////////*/
 /* Phone screen */
-@media screen and (max-height: 999px) {
+@media screen and (max-height: 999px) and (max-width: 600px) {
   html {
     font-size: 50%; /* scale fonts slightly bigger so text is readable */
   }
@@ -308,7 +297,7 @@ body {
   }
 
   .main {
-    width: 100%;        /* use full width of phone */
+    width: 100%; /* use full width of phone */
     padding: 2.24rem 1.6rem; /* smaller padding */
   }
 
@@ -316,11 +305,17 @@ body {
     gap: 1.92rem; /* reduce gaps */
   }
 
-  #start-container, #welcome-container, #end-quiz-container {
-    gap: 3.2rem
+  #start-container,
+  #welcome-container,
+  #end-quiz-container {
+    gap: 3.2rem;
   }
 
-  #question-progress, #end-quiz-progress, #education-progress, #result-education-content-container, #welcome-title {
+  #question-progress,
+  #end-quiz-progress,
+  #education-progress,
+  #result-education-content-container,
+  #welcome-title {
     height: 3.65rem;
   }
 
@@ -333,7 +328,6 @@ body {
     height: auto;
     max-height: none;
   }
-
 
   .illustration img,
   #start-illustration img {
@@ -363,48 +357,103 @@ body {
     padding: 1.6rem 3.84rem 1.6rem 3.84rem;
   }
 
-  #start-button-container .button, #result-button-container .button, #education-button-container .button,
+  #start-button-container .button,
+  #result-button-container .button,
+  #education-button-container .button,
   #welcome-button,
   #end-quiz-button {
-  padding: 1.1rem 3.8rem;
-}
+    padding: 1.1rem 3.8rem;
+  }
 
   .button img {
     right: 3.84rem;
     height: 5.6rem;
     bottom: -1rem;
   }
-
-  .button:hover .hover-img {
-    clip-path: inset(0 0 1.2rem 0)
-  }
 }
 
-@media screen and (min-height: 1000px) and (max-height: 1200px){
-    html {
-      font-size: 45%;
-    }
+@media screen and (min-width: 601px) and (max-height: 1200px) {
+  html {
+    font-size: 45%;
+  }
+
+  .hover-img {
+    display: none;
+  }
+
+  .button:hover {
+    background-color: #ffe099;
+    box-shadow: inset 0.2rem 0.2rem 0 0.4rem black;
+  }
+
+  .button:hover .not-hover-img {
+    display: none;
+  }
+
+  .button:hover .hover-img {
+    display: block;
+    clip-path: inset(0 0 2.2rem 0);
+  }
+
+  .button:hover .hover-img {
+    clip-path: inset(0 0 1.2rem 0);
+  }
 }
 
 /* Desktop */
-@media screen and (min-height: 1201px) {
+@media screen and (min-height: 1201px) and (max-height: 1600px) {
   html {
-    font-size: 62.5%; /* ~10px per rem */
-  };
+    font-size: 57%; 
+  }
 
-  .main {
-    max-width: 70rem;
+  .hover-img {
+    display: none;
+  }
+
+  .button:hover {
+    background-color: #ffe099;
+    box-shadow: inset 0.2rem 0.2rem 0 0.4rem black;
+  }
+
+  .button:hover .not-hover-img {
+    display: none;
+  }
+
+  .button:hover .hover-img {
+    display: block;
+    clip-path: inset(0 0 2.2rem 0);
+  }
+
+  .button:hover .hover-img {
+    clip-path: inset(0 0 1.2rem 0);
   }
 }
 
 
+@media screen and (min-height: 1601) {
+  html {
+    font-size: 70%; 
+  }
 
+  .hover-img {
+    display: none;
+  }
 
+  .button:hover {
+    background-color: #ffe099;
+    box-shadow: inset 0.2rem 0.2rem 0 0.4rem black;
+  }
 
+  .button:hover .not-hover-img {
+    display: none;
+  }
 
+  .button:hover .hover-img {
+    display: block;
+    clip-path: inset(0 0 2.2rem 0);
+  }
 
-
-
-
-
-
+  .button:hover .hover-img {
+    clip-path: inset(0 0 1.2rem 0);
+  }
+}

@@ -68,13 +68,11 @@ function display(quizData) {
       let answer = $(this).attr("data-answer");
       let answer_points = quizData.questions[i].points[answer];
       answers[`question_${i}`] = answer_points;
-      console.log(answers);
       ////Question Number Limit
       if (i < 10) {
         i += 1;
         display(quizData);
       } else {
-        console.log("No more question");
         $("#quiz-page").css("display", "none");
         $("#end-quiz-page").css("display", "flex");
       }
@@ -107,7 +105,6 @@ function analyzeAnswer() {
     { attachment: 0, gratification: {}, emotions: new Set(), depth: 0 }
   );
 
-  console.log(final_answers);
 
   //// Categorize archetype
   let user_archetype = {};
@@ -149,7 +146,6 @@ function analyzeAnswer() {
     user_archetype.depth = "medium";
   }
 
-  console.log(user_archetype);
 
   analyzeArchetype(user_archetype, archetypeData);
 }
@@ -208,8 +204,6 @@ function analyzeArchetype(user_archetype, archetypeData) {
   let user_archetype_result = Object.keys(archetype_scores).reduce((a, b) =>
     archetype_scores[a] > archetype_scores[b] ? a : b
   );
-  console.log(archetype_scores);
-  console.log(user_archetype_result);
 
   $("#result-illustration img").each(function () {
     let img_type = $(this).attr("data-type");
@@ -347,7 +341,6 @@ function backToQuizButtonControl() {
     .on("click", function () {
       $("#end-quiz-page").css("display", "none");
       $("#quiz-page").css("display", "flex");
-      console.log("Back to quiz - question 10");
     });
 }
 
@@ -358,7 +351,6 @@ function endQuizButtonControl() {
       $("#end-quiz-page").css("display", "none");
       $("#result-education-page").css("display", "flex");
       $("#education-button-container").css("display", "none");
-      console.log("Receive your order!");
       analyzeAnswer();
     });
 }
@@ -385,12 +377,10 @@ function progressButtonControl(quizData) {
         $("#start-page").css("display", "flex");
         $("#quiz-page").css("display", "none");
         answers = {}; // reset answers
-        console.log("Returned home, answers reset");
       }
       // If on question > 1 and an answer exists → go back one step
       else if (i > 1) {
         i -= 1;
-        console.log("Moved back to question", i);
         display(quizData);
       }
     });
@@ -409,6 +399,5 @@ function retakeButtonControl(quizData) {
       n = 0; //Reset education number
       educationContentOrder();
       $("#education-button-container").css("display", "flex");
-      console.log("Retake quiz, answers reset");
     });
 }
