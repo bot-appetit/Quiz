@@ -2,6 +2,7 @@
 
 Bot Appétit is an interactive quiz that uses a playful “AI Kitchen” metaphor to explore how people build emotional bonds with AI companions. In less than 10 minutes, players navigate through storytelling scenarios, make choices, and discover their own “flavor” of AI relationship.
 
+
 ## 🎯 Purpose
 
 •	Raise Awareness: Expose the psychological drivers (loneliness, anthropomorphism) behind AI emotional attachment
@@ -12,14 +13,19 @@ Bot Appétit is an interactive quiz that uses a playful “AI Kitchen” metapho
 
 •	Empower Youth Agency: Provide an accessible tool that lets young people actively shape their relationship with AI.
 
+
 ## 🧩 How It Works
+
 1. Players enter the “AI Kitchen” and answer 10 situational questions.
 
 2. Their choices reflect attitudes and behaviors toward AI companions.
 
 3. Results are revealed as one of 6 food-inspired archetypes (Hot Soup, Milk Tea, Hot Pot, Cotton Candy, Potato Chips, Coffee Cup).
 
-4. Each archetype comes with a description + reminder card + call-to-action for healthier AI use.
+4. Each archetype comes with a result card with fun, relatable description reflecting on habits of using AI.
+
+5. Players can read more about the practice of emotional dependency caused by AI companion after taking the quiz.
+
 
 ## ✨ Key Features
 
