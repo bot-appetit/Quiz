@@ -354,7 +354,7 @@
     {
       "order": "Question 8/10",  
       "story": "The barstool pulls out as though offering you a seat across from an unseen host. For a moment, you imagine clinking glasses with someone who might exist only here. As if your AI companion might be a real one.",
-      "illustration": "./design/example.png",
+      "illustration": "./design/questions/8.PNG",
       "ask": "Should this feeling spill into reality, or stay behind the curtain of imagination?",
       "answers": [
         "No, keep it behind the counter. Some lines shouldn't blur.",

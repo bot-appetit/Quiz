@@ -136,7 +136,7 @@ function retakeButtonControl(quizData) {
   $("#retake-button")
     .off("click")
     .on("click", function () {
-      $("#result-page").css("display", "none");
+      $("#result-education-page").css("display", "none");
       $("#start-page").css("display", "flex");
       answers = {};
       i = 1;
