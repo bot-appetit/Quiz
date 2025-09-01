@@ -72,8 +72,8 @@ function display(quizData) {
   let questionAnswers = "";
   for (let a = 0; a < quizData.questions[i].answers.length; a++) {
     questionAnswers += `<div class="button" answer="${a}">
-            <img class="not-hover-img" src="./design/components/buttons/multiple-options/${a}.png"/>
-            <img class="hover-img" src="./design/components/buttons/multiple-options/${a}-hover.png"/>
+            <img class="not-hover-img" src="./design/buttons/multiple-options/${a}.png"/>
+            <img class="hover-img" src="./design/buttons/multiple-options/${a}-hover.png"/>
             <p>${quizData.questions[i].answers[a]}</p>
           </div>`;
   }
