@@ -27,7 +27,7 @@
           "gratification": {
             "entertainment/escapism": 10
           },
-          "emotions": ["joy", "surprise"],
+          "emotions": ["joy", "surprise", "love"],
           "depth": 2
         },
         {
@@ -36,7 +36,7 @@
             "emotional reg": 10,
             "social": 4
           },
-          "emotions": ["sadness", "fear"],
+          "emotions": ["sadness", "fear", "anger", "love"],
           "depth": 4
         },
         {
@@ -76,7 +76,7 @@
             "entertainment/escapism": 8,
             "social": 2
           },
-          "emotions": ["joy"],
+          "emotions": ["joy", "surprise", "love"],
           "depth": 2
         },
         {
@@ -86,7 +86,7 @@
             "social": 8,
             "love": 8
           },
-          "emotions": ["sadness", "fear"],
+          "emotions": ["sadness", "fear", "anger", "love"],
           "depth": 4
         },
         {
@@ -118,7 +118,7 @@
             "info-seeking": 10,
             "identity": 6
           },
-          "emotions": ["surprise"],
+          "emotions": ["surprise", "fear"],
           "depth": 1
         },
         {
@@ -127,7 +127,7 @@
             "entertainment/escapism": 10,
             "social": 5
           },
-          "emotions": ["joy"],
+          "emotions": ["joy", "surprise"],
           "depth": 2
         },
         {
@@ -136,7 +136,7 @@
             "emotional reg": 8,
             "love": 10
           },
-          "emotions": ["sadness", "love"],
+          "emotions": ["sadness", "love", "fear"],
           "depth": 5
         },
         {
@@ -145,7 +145,7 @@
             "identity": 10,
             "emotional reg": 2
           },
-          "emotions": ["fear", "love"],
+          "emotions": ["fear", "love", "joy", "surprise"],
           "depth": 3
         }
       ]
@@ -153,7 +153,7 @@
     {
       "order": "Question 4/10",  
       "story": "The warmth fogs the glass by the sink. You trace a pattern with your fingertip and vibes: maybe a doodle, maybe something closer to your heart. The kitchen seems to hold its breath.",
-      "illustration": "./design/example.png",
+      "illustration": "./design/questions/4.PNG",
       "ask": "How much of yourself would you leave here, pressed into the fog like how you'd tell your AI?",
       "answers": [
         "Almost everything, deeply like usual.",
@@ -169,7 +169,7 @@
             "social": 10,
             "love": 8
           },
-          "emotions": ["love", "sadness"],
+          "emotions": ["love", "sadness", "fear", "joy", "anger", "love"],
           "depth": 5
         },
         {
@@ -179,7 +179,7 @@
             "social": 8,
             "love": 5
           },
-          "emotions": ["fear", "sadness"],
+          "emotions": ["fear", "sadness", "anger"],
           "depth": 4
         },
         {
@@ -188,7 +188,7 @@
             "love": 7,
             "social": 7
           },
-          "emotions": ["surprise"],
+          "emotions": ["surprise", "love"],
           "depth": 2
         },
         {
@@ -216,7 +216,7 @@
           "gratification": {
             "info-seeking": 10
           },
-          "emotions": ["surprise"],
+          "emotions": ["surprise", "fear"],
           "depth": 1
         },
         {
@@ -235,7 +235,7 @@
             "social": 8,
             "emotional reg": 10
           },
-          "emotions": ["love", "joy"],
+          "emotions": ["love", "sadness", "fear"],
           "depth": 5
         },
         {
@@ -252,7 +252,7 @@
     {
       "order": "Question 6/10",  
       "story": "A splash too much, and suddenly the sauce splits, the drink turns cloudy. For a moment, even the kitchen falters. Wow, it tastes wrong! Wrong like every time your AI chatbot doesn't get what you mean!",
-      "illustration": "./design/example.png",
+      "illustration": "./design/questions/6.PNG",
       "ask": "Your honest reaction is…",
       "answers": [
         "Haha, well… guess it's expected! :)",
@@ -267,7 +267,7 @@
             "info-seeking": 10,
             "entertainment/escapism": 4
           },
-          "emotions": ["surprise"],
+          "emotions": [],
           "depth": 1
         },
         {
@@ -276,7 +276,7 @@
             "entertainment/escapism": 10,
             "info-seeking": 5
           },
-          "emotions": ["joy"],
+          "emotions": ["surprise"],
           "depth": 2
         },
         {
@@ -296,7 +296,7 @@
             "emotional reg": 10,
             "identity": 10
           },
-          "emotions": ["anger", "love"],
+          "emotions": ["anger", "love", "fear", "sadness"],
           "depth": 5
         }
       ]
@@ -304,7 +304,7 @@
     {
       "order": "Question 7/10",  
       "story": "After the counter clears itself and offers you another glass, another chance, you catch yourself talking aloud as though someone is here. The whisk twirls in answer, the oven light flickers, the ice rattles like a laugh.",
-      "illustration": "./design/example.png",
+      "illustration": "./design/questions/7.PNG",
       "ask": "Have you ever pictured this place, or the chatbot, as more than machines?",
       "answers": [
         "No. Just a kitchen, maybe a smart one, nothing more.",
@@ -328,7 +328,7 @@
             "entertainment/escapism": 10,
             "social": 5
           },
-          "emotions": ["joy"],
+          "emotions": ["joy", "surprise"],
           "depth": 3
         },
         {
@@ -337,7 +337,7 @@
             "love": 10,
             "social": 10
           },
-          "emotions": ["love", "joy"],
+          "emotions": ["love", "joy", "fear", "sadness", "anger", "surprise"],
           "depth": 4
         },
         {
@@ -346,7 +346,7 @@
             "identity": 10,
             "emotional reg": 7
           },
-          "emotions": ["fear"],
+          "emotions": ["fear", "surprise"],
           "depth": 4
         }
       ]
@@ -388,7 +388,7 @@
             "emotional reg": 4,
             "identity": 4
           },
-          "emotions": ["love", "sadness"],
+          "emotions": ["love", "sadness", "fear", "anger"],
           "depth": 5
         },
         {
@@ -404,7 +404,7 @@
     {
       "order": "Question 9/10",  
       "story": "You notice yourself reaching for ingredients you once ignored. The kitchen seems to have taught you courage without a lesson plan, simply by cooking with you. Just like how your AI companion helps you learn and develop yourself.",
-      "illustration": "./design/example.png",
+      "illustration": "./design/questions/9.PNG",
       "ask": "This growth is thanks to how it kept giving you…",
       "answers": [
         "Timely tips, like recipes at the right moment.",
@@ -418,7 +418,7 @@
           "gratification": {
             "info-seeking": 10
           },
-          "emotions": ["surprise"],
+          "emotions": ["surprise", "fear"],
           "depth": 2
         },
         {
@@ -427,7 +427,7 @@
             "social": 10,
             "love": 10
           },
-          "emotions": ["joy"],
+          "emotions": ["joy", "love"],
           "depth": 3
         },
         {
@@ -436,7 +436,7 @@
             "emotional reg": 10,
             "love": 5
           },
-          "emotions": ["love", "sadness"],
+          "emotions": ["love", "sadness", "fear", "anger"],
           "depth": 5
         },
         {
@@ -452,7 +452,7 @@
     {
       "order": "Question 10/10",  
       "story": "The moon shines beautifully. The hum quiets. No glasses clink, no steam curls. You imagine returning tomorrow to a still kitchen that waits for no one. You'd still cook, still drink, but without this invisible warmth.",
-      "illustration": "./design/example.png",
+      "illustration": "./design/questions/10.PNG",
       "ask": "If all of this vanished, whether it's the kitchen or the chatbot, you'd really miss…",
       "answers": [
         "Answers, like a cookbook gone missing.",
@@ -475,7 +475,7 @@
             "entertainment/escapism": 10,
             "social": 6
           },
-          "emotions": ["joy"],
+          "emotions": ["joy", "surprise"],
           "depth": 3
         },
         {
@@ -484,7 +484,7 @@
             "emotional reg": 10,
             "love": 5
           },
-          "emotions": ["sadness"],
+          "emotions": ["sadness", "love", "fear"],
           "depth": 4
         },
         {

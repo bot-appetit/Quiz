@@ -2,32 +2,35 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 150%;
-  letter-spacing: -0.22px;
+}
+
+html {
+  font-size: 45%;
 }
 
 
 body {
   background-color: #fffaee;
-  height: 100vh; /* full screen height */
   display: flex;
   justify-content: center; /* center horizontally */
   align-items: center; /* center vertically */
+  font-size: 2rem;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: -0.022rem;
+  height: 100vh
 }
 
 .main {
-  aspect-ratio: 640 / 1024; /*figma scale*/
-  /*height: 1024px; /* don’t exceed design */
-  max-width: 640px;
-  /*width: auto; /* width adjusts automatically */
+  width: calc(100% * 640 / 1024);
+  max-width: 64rem;
+  min-height: 94%;
   margin: auto;
 
   /* Padding scaled from Figma (28px top/bottom, 20px left right) */
-  padding: 28px 20px;
+  padding: 2.8rem 2rem;
 }
 
 .container {
@@ -35,11 +38,11 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 24px/* 24px in Figma, scales with width */
+  gap: 2.4rem/* 24px in Figma, scales with width */;
 }
 
 .copy-right {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .illustration, #result-illustration, #education-illustration {
@@ -48,7 +51,7 @@ body {
 }
 
 .illustration img {
-  height: 300px;
+  height: 30rem;
   width: auto;
 }
 
@@ -64,39 +67,39 @@ body {
 /*/////////////// Start Page ///////////////// */
 #start-page {
   justify-content: center;
-  height: 100%;
+  height: 94vh;
 }
 
 #start-container {
-  gap: 40px
+  gap: 4rem;
 }
 
 #start-content {
-  gap: 12px
+  gap: 1.2rem;
 }
 
 #start-title {
-  font-size: 36px;
+  font-size: 3.6rem;
 }
 
 #start-illustration img {
-  height: 400px;
+  height: 40rem;
 }
 
 #start-button-container, #result-button-container, #education-button-container {
-  gap: 20px;
+  gap: 2rem;
 }
 
 .other-button-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 10px;
+  gap: 1rem;
 }
 
 #start-button-container .button, #result-button-container .button, #education-button-container .button {
   text-align: center;
-  padding: 14px 48px 14px 48px;
+  padding: 1.4rem 4.8rem;
   font-family: "Seymour One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -115,25 +118,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45.68px;
+  height: 4.57rem;
 }
 
 #welcome-title div{
   border-radius: 100px;
   background-color: #fff0cc;
   display: flex;
-  padding: 0 28px;
+  padding: 0 2.8rem;
   align-items: center;
   justify-content: center;
   height: 100%
 }
 
 #welcome-container {
-  gap: 40px;
+  gap: 4rem;
 }
 
 #welcome-content-container {
-  gap: 11px
+  gap: 1.1rem
 }
 
 #special-line {
@@ -144,7 +147,7 @@ body {
 
 #welcome-button {
   text-align: center;
-  padding: 14px 48px 14px 48px;
+  padding: 1.4rem 4.8rem;
 }
 
 /*////////////// Quiz Page ////////////*/
@@ -156,7 +159,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 45.68px;
+  height: 4.57rem;
 }
 
 #back-button, #back-to-quiz-button, #back-education-button, #next-education-button {
@@ -170,21 +173,21 @@ body {
   background-color: #fff0cc;
   height: 100%;
   display: flex;
-  padding: 0 28px;
+  padding: 0 2.8rem;
   align-items: center;
   justify-content: center;
 }
 
 #question-content-container, #end-content-container {
-  gap: 11px;
+  gap: 1.1rem;
 }
 
 #question-ask {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 #answer-container {
-  gap: 20px;
+  gap: 2rem;
 }
 
 
@@ -194,12 +197,12 @@ body {
 }
 
 #end-quiz-container {
-  gap: 40px;
+  gap: 4rem;
 }
 
 #end-quiz-button {
   text-align: center;
-  padding: 14px 48px 14px 48px;
+  padding: 1.4rem 4.8rem;
 }
 
 
@@ -211,12 +214,12 @@ body {
 }
 
 #result-education-content-container {
-  gap: 40px;
+  gap: 4rem;
 }
 
 #result-illustration img {
-  width: 644px;
-  height: auto;
+  width: 64rem;
+  height: auto
 }
 
 #download-button a {
@@ -227,15 +230,15 @@ body {
 
 /*/////////////// EDUCATION PAGE ///////////////*/
 #education-title {
-  font-size: 36px;
+  font-size: 3.6rem;
 }
 
 #education-illustration img {
-  width: 640px;
-  height: 640px;
-  border-radius: 40px;
-  border: 4px solid black;
-  box-shadow: 2px 2px 0 4px black;
+  width: 64rem;
+  height: auto;
+  border-radius: 4rem;
+  border: 0.4rem solid black;
+  box-shadow: 0.2rem 0.2rem 0 0.4rem black;
   box-sizing: border-box;
 }
 
@@ -245,9 +248,9 @@ body {
 .button {
   background-color: #FFF0CC;
   border-radius: 50px;
-  box-shadow: 2px 2px 0 4px black;
+  box-shadow: 0.2rem 0.2rem 0 0.4rem black;
   text-align: left;
-  padding: 20px 83px 20px 48px;
+  padding: 2rem 8.3rem 2rem 4.8rem;
   position: relative;
   overflow: hidden;
   transition-duration: 0.25s;
@@ -262,10 +265,12 @@ body {
 
 .button img{
  position: absolute;
- bottom: -20px;
- right: 48px;
+ bottom: -2rem;
+ right: 4.8rem;
  grid-area: 1/1;
  z-index: 1;
+ height: 7rem;
+ width: auto
 }
 
 .hover-img {
@@ -274,7 +279,7 @@ body {
 
 .button:hover {
   background-color: #FFE099;
-  box-shadow: inset 2px 2px 0 4px black;
+  box-shadow: inset 0.2rem 0.2rem 0 0.4rem black;
 }
 
 .button:hover .not-hover-img {
@@ -283,8 +288,12 @@ body {
 
 .button:hover .hover-img {
   display: block;
-  clip-path: inset(0 0 22px 0)
+  clip-path: inset(0 0 2.2rem 0)
 }
+
+
+
+
 
 
 
