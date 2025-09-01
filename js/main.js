@@ -7,6 +7,7 @@ let n = 0;
 //Start - Initialisation
 $(function () {
   $.get("./quiz_data/questions.json", function (quizData) {
+    questionIllustrationDisplay(quizData)
     display(quizData);
   });
 
@@ -23,10 +24,19 @@ $(function () {
 });
 
 //////////////// Display Questions //////////////
+function questionIllustrationDisplay(quizData) {
+  let questionIllustrations = "";
+
+  for (let a = 1; a < quizData.questions.length; a++) {
+    questionIllustrations += `<img data-order="${a}" src="${quizData.questions[a].illustration}"/>`;
+  }
+  $("#question-illustration").html(questionIllustrations);
+}
+
 function display(quizData) {
   let questionNumber = `<p>${quizData.questions[i].order}</p>`;
   let questionStory = `<p>${quizData.questions[i].story}</p>`;
-  let questionIllustration = `<img src="${quizData.questions[i].illustration}"/>`;
+
   let questionAsk = `${quizData.questions[i].ask}`;
 
   let questionAnswers = "";
@@ -38,9 +48,17 @@ function display(quizData) {
           </div>`;
   }
 
+  $("#question-illustration img").each(function () {
+    let img_order = $(this).attr("data-order");
+    if (i == img_order) {//////comparing archetype illustration - user result
+      $(this).css("display", "flex");
+    } else {
+      $(this).css("display", "none");
+    }
+  });
+
   $("#question-number").html(questionNumber);
   $("#question-story").html(questionStory);
-  $("#question-illustration").html(questionIllustration);
   $("#question-ask").html(questionAsk);
   $("#answer-container").html(questionAnswers);
 

@@ -20,13 +20,14 @@ body {
   font-style: normal;
   line-height: 150%;
   letter-spacing: -0.022rem;
-  height: auto;
+  height: auto
 }
 
 .main {
   width: calc(100% * 640 / 1024);
   max-width: 64rem;
   min-height: 94%;
+  height: auto;
   /* Padding scaled from Figma (28px top/bottom, 20px left right) */
   padding: 2.8rem 2rem;
 }
