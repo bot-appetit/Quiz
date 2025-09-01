@@ -83,7 +83,7 @@ body {
   height: 400px;
 }
 
-#start-button-container {
+#start-button-container, #result-button-container, #education-button-container {
   gap: 20px;
 }
 
@@ -94,7 +94,7 @@ body {
   gap: 10px;
 }
 
-#start-button-container .button {
+#start-button-container .button, #result-button-container .button, #education-button-container .button {
   text-align: center;
   padding: 14px 48px 14px 48px;
   font-family: "Seymour One", sans-serif;
@@ -202,6 +202,9 @@ body {
   padding: 14px 48px 14px 48px;
 }
 
+
+
+
 /*////////////// RESULT PAGE /////////////*/
 #result-education-page {
   display: none;
@@ -214,18 +217,6 @@ body {
 #result-illustration img {
   width: 644px;
   height: auto;
-}
-
-#result-button-container {
-  gap: 20px;
-}
-
-#result-button-container .button {
-  text-align: center;
-  padding: 14px 48px 14px 48px;
-  font-family: "Seymour One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 

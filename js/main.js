@@ -22,49 +22,6 @@ $(function () {
   ButtonControl();
 });
 
-function ButtonControl() {
-  startButtonControl();
-  welcomeButtonControl();
-  backToQuizButtonControl();
-  endQuizButtonControl();
-}
-
-//////////// BUTTON CONTROL /////////////
-function startButtonControl() {
-  $("#start-button").click(function () {
-    $("#start-page").css("display", "none");
-    $("#welcome-page").css("display", "flex");
-  });
-}
-
-function welcomeButtonControl() {
-  $("#welcome-button").click(function () {
-    $("#welcome-page").css("display", "none");
-    $("#quiz-page").css("display", "flex");
-  });
-}
-
-function backToQuizButtonControl() {
-  $("#back-to-quiz-button")
-    .off("click")
-    .on("click", function () {
-      $("#end-quiz-page").css("display", "none");
-      $("#quiz-page").css("display", "flex");
-      console.log("Back to quiz - question 10");
-    });
-}
-
-function endQuizButtonControl() {
-  $("#end-quiz-button")
-    .off("click")
-    .on("click", function () {
-      $("#end-quiz-page").css("display", "none");
-      $("#result-education-page").css("display", "flex");
-      console.log("Receive your order!");
-      analyzeAnswer();
-    });
-}
-
 //////////////// Display Questions //////////////
 function display(quizData) {
   let questionNumber = `<p>${quizData.questions[i].order}</p>`;
@@ -108,42 +65,6 @@ function display(quizData) {
 
   progressButtonControl(quizData);
   retakeButtonControl(quizData);
-}
-
-//////// Progress Button ///////
-function progressButtonControl(quizData) {
-  $("#back-button")
-    .off("click")
-    .on("click", function () {
-      // If on question 1 → go back to home
-      if (i === 1) {
-        $("#start-page").css("display", "flex");
-        $("#quiz-page").css("display", "none");
-        answers = {}; // reset answers
-        console.log("Returned home, answers reset");
-      }
-      // If on question > 1 and an answer exists → go back one step
-      else if (i > 1) {
-        i -= 1;
-        console.log("Moved back to question", i);
-        display(quizData);
-      }
-    });
-}
-
-//////// Retake Button ///////
-function retakeButtonControl(quizData) {
-  $("#retake-button")
-    .off("click")
-    .on("click", function () {
-      $("#result-education-page").css("display", "none");
-      $("#start-page").css("display", "flex");
-      answers = {};
-      i = 1;
-      learn_no = 1;
-      display(quizData);
-      console.log("Retake quiz, answers reset");
-    });
 }
 
 function analyzeAnswer() {
@@ -270,7 +191,7 @@ function analyzeArchetype(user_archetype, archetypeData) {
     archetype_scores[a] > archetype_scores[b] ? a : b
   );
   console.log(archetype_scores);
-  console.log(user_archetype_result)
+  console.log(user_archetype_result);
 
   $("#result-illustration img").each(function () {
     let img_type = $(this).attr("data-type");
@@ -339,4 +260,122 @@ function educationContentOrder() {
       $(this).css("display", "none");
     }
   });
+}
+
+//////////// BUTTON CONTROL /////////////
+function ButtonControl() {
+  //Homepage
+  startButtonControl();
+  learnButtonControl();
+  //Learn page
+  backToHomeButtonControl();
+  takeTheQuizButtonControl();
+  //Welcome page
+  welcomeButtonControl();
+  //End page
+  backToQuizButtonControl();
+  endQuizButtonControl();
+}
+
+function startButtonControl() {
+  $("#start-button").click(function () {
+    $("#start-page").css("display", "none");
+    $("#welcome-page").css("display", "flex");
+  });
+}
+
+function learnButtonControl() {
+  $("#learn-button").click(function () {
+    $("#start-page").css("display", "none");
+    $("#result-education-page").css("display", "flex");
+    $("#result-content-container").css("display", "none");
+  });
+}
+
+function backToHomeButtonControl() {
+  $("#back-to-home-button").click(function () {
+    $("#start-page").css("display", "flex");
+    $("#result-education-page").css("display", "none");
+    $("#result-content-container").css("display", "flex");
+    n = 0;
+    educationContentOrder();
+  });
+}
+
+function takeTheQuizButtonControl() {
+  $("#take-the-quiz-button").click(function () {
+    $("#welcome-page").css("display", "flex");
+    $("#result-education-page").css("display", "none");
+    $("#result-content-container").css("display", "flex");
+    n = 0;
+    educationContentOrder();
+  });
+}
+
+function welcomeButtonControl() {
+  $("#welcome-button").click(function () {
+    $("#welcome-page").css("display", "none");
+    $("#quiz-page").css("display", "flex");
+  });
+}
+
+function backToQuizButtonControl() {
+  $("#back-to-quiz-button")
+    .off("click")
+    .on("click", function () {
+      $("#end-quiz-page").css("display", "none");
+      $("#quiz-page").css("display", "flex");
+      console.log("Back to quiz - question 10");
+    });
+}
+
+function endQuizButtonControl() {
+  $("#end-quiz-button")
+    .off("click")
+    .on("click", function () {
+      $("#end-quiz-page").css("display", "none");
+      $("#result-education-page").css("display", "flex");
+      $("#education-button-container").css("display", "none");
+      console.log("Receive your order!");
+      analyzeAnswer();
+    });
+}
+
+//////// Progress Button ///////
+
+function progressButtonControl(quizData) {
+  $("#back-button")
+    .off("click")
+    .on("click", function () {
+      // If on question 1 → go back to home
+      if (i === 1) {
+        $("#start-page").css("display", "flex");
+        $("#quiz-page").css("display", "none");
+        answers = {}; // reset answers
+        console.log("Returned home, answers reset");
+      }
+      // If on question > 1 and an answer exists → go back one step
+      else if (i > 1) {
+        i -= 1;
+        console.log("Moved back to question", i);
+        display(quizData);
+      }
+    });
+}
+
+//////// Retake Button ///////
+function retakeButtonControl(quizData) {
+  $("#retake-button")
+    .off("click")
+    .on("click", function () {
+      $("#result-education-page").css("display", "none");
+      $("#start-page").css("display", "flex");
+      answers = {};
+      i = 1; //Reset question number
+      display(quizData);
+      n = 0; //Reset education number
+      educationContentOrder();
+      $("#education-button-container").css("display", "flex");
+      console.log("Retake quiz, answers reset");
+    });
 }
