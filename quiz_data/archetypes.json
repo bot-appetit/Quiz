@@ -4,41 +4,41 @@
         "gratification": ["emotional reg", "social", "info-seeking"],
         "depth": ["high"],
         "range": ["broad"],
-        "illustration": "./design/archetypes/comfort_seeker.jpg"
+        "illustration": "./design/archetypes/hot_soup.png"
     },
     "detached_escapist": {
         "attachment": ["avoidant", "secure"],
         "gratification": ["entertainment/escapism", "social", "identity"],
         "depth": ["low", "medium"],
         "range": ["narrow", "moderate"],
-        "illustration": "./design/archetypes/detached_escapist.jpg"
+        "illustration": "./design/archetypes/potato_chips.png"
     },
     "explorer": {
         "attachment": ["secure"],
         "gratification": ["identity", "info-seeking", "emotional reg"],
         "depth": ["medium"],
         "range": ["moderate", "broad"],
-        "illustration": "./design/archetypes/explorer.jpg"
+        "illustration": "./design/archetypes/hot_pot.png"
     },
     "casual_friend ": {
         "attachment": ["secure"],
         "gratification": ["social", "entertainment/escapism", "info-seeking"],
         "depth": ["medium"],
         "range": ["moderate"],
-        "illustration": "./design/archetypes/casual_friend.jpg"
+        "illustration": "./design/archetypes/bubble_tea.png"
     },
     "dream_companion": {
         "attachment": ["anxious"],
         "gratification": ["love", "social", "emotional reg"],
         "depth": ["high"],
         "range": ["broad"],
-        "illustration": "./design/archetypes/dream_companion.jpg"
+        "illustration": "./design/archetypes/cotton_candy.png"
     },
     "practical_inquirer": {
         "attachment": ["avoidant", "secure"],
         "gratification": ["info-seeking", "identity", "entertainment/escapism"],
         "depth": ["low"],
         "range": ["narrow", "moderate"],
-        "illustration": "./design/archetypes/practical_inquirer.jpg"
+        "illustration": "./design/archetypes/coffee_cup.png"
     }
 }

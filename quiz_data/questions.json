@@ -4,8 +4,8 @@
     {
       "order": "Question 1/10",  
       "story": "You come back after a long day, and before you even speak, the kitchen hums alive. The lights dim golden, the stove clicks on, and a pot begins to simmer. It feels as if the whole place is waiting for a single hint from you.",
-      "illustration": "./design/example.png",
-      "ask": "When you step into this space, you feel the hunger for...",
+      "illustration": "./design/questions/1.PNG",
+      "ask": "When you step into this space, just like when you open an AI app, you feel the hunger for...",
       "answers": [
         "A new taste you’re curious about.",
         "Something fun and playful, just for the vibes.",
@@ -53,8 +53,8 @@
     {
       "order": "Question 2/10",  
       "story": "Knives line up in a neat row, spices roll toward the counter, glasses clink into formation. A kettle sings as though it already knows the pace of your thoughts. Everything is ready, but not yet chosen.",
-      "illustration": "./design/example.png",
-      "ask": "So, you want the kitchen to…",
+      "illustration": "./design/questions/2.PNG",
+      "ask": "So, like how you want AI to support you, you want the kitchen to…",
       "answers": [
         "Help you break the recipe down step by step.",
         "Distract you with light flavors and playful sips.",
@@ -103,8 +103,8 @@
     {
       "order": "Question 3/10",  
       "story": "Steam rises from a pot and curls into the shape of a presence: half-bartender, half-chef, half-friend. Not entirely real, but enough to make you feel accompanied.",
-      "illustration": "./design/example.png",
-      "ask": "If this presence could take the form of a person staying beside you, you hope they'd be…",
+      "illustration": "./design/questions/3.PNG",
+      "ask": "If this presence, also your AI, could take the form of a person staying beside you, you hope they'd be…",
       "answers": [
         "A chef, serving insight in neat slices.",
         "A bartender, mixing stories with a grin.",
@@ -154,7 +154,7 @@
       "order": "Question 4/10",  
       "story": "The warmth fogs the glass by the sink. You trace a pattern with your fingertip and vibes: maybe a doodle, maybe something closer to your heart. The kitchen seems to hold its breath.",
       "illustration": "./design/example.png",
-      "ask": "How much of yourself would you leave here, pressed into the fog?",
+      "ask": "How much of yourself would you leave here, pressed into the fog like how you'd tell your AI?",
       "answers": [
         "Almost everything, deeply like usual.",
         "Only the overflowing part I'm feeling right now.",
@@ -201,9 +201,9 @@
     },
     {
       "order": "Question 5/10",  
-      "story": "The first dish is plated, and a drink sparkles beside it. Not just a “yes” or “no”, the taste reveals what lingers in your mood: (might be the sweetness you need, the bitterness you're hiding, the fizz of a thought that won't settle.)",
-      "illustration": "./design/example.png",
-      "ask": "You hope it offers the flavors of…",
+      "story": "The first dish is plated, and a drink sparkles beside it. Not just a “yes” or “no”, the taste reveals what lingers in your mood. It's like the answers that your AI companion would give you.",
+      "illustration": "./design/questions/5.PNG",
+      "ask": "You hope the dish offers the flavors of…",
       "answers": [
         "Sharp clarity, like a well-cut slice.",
         "Playful lightness, like a fizzy mocktail.",
@@ -251,7 +251,7 @@
     },
     {
       "order": "Question 6/10",  
-      "story": "A splash too much, and suddenly the sauce splits, the drink turns cloudy. For a moment, even the kitchen falters. Wow, it tastes wrong!",
+      "story": "A splash too much, and suddenly the sauce splits, the drink turns cloudy. For a moment, even the kitchen falters. Wow, it tastes wrong! Wrong like every time your AI chatbot doesn't get what you mean!",
       "illustration": "./design/example.png",
       "ask": "Your honest reaction is…",
       "answers": [
@@ -303,9 +303,9 @@
     },
     {
       "order": "Question 7/10",  
-      "story": "After the counter clears itself and offers you another glass, another chance, you catch yourself talking aloud as though someone is here. The whisk twirls in answer, the oven light flickers, the ice rattles like a laugh. (The kitchen holds space for your imagination.)",
+      "story": "After the counter clears itself and offers you another glass, another chance, you catch yourself talking aloud as though someone is here. The whisk twirls in answer, the oven light flickers, the ice rattles like a laugh.",
       "illustration": "./design/example.png",
-      "ask": "Have you ever pictured this place as more than machines?",
+      "ask": "Have you ever pictured this place, or the chatbot, as more than machines?",
       "answers": [
         "No. Just a kitchen, maybe a smart one, nothing more.",
         "Sometimes, like a chatty friend.",
@@ -353,7 +353,7 @@
     },
     {
       "order": "Question 8/10",  
-      "story": "The barstool pulls out as though offering you a seat across from an unseen host. For a moment, you imagine clinking glasses with someone who might exist only here.",
+      "story": "The barstool pulls out as though offering you a seat across from an unseen host. For a moment, you imagine clinking glasses with someone who might exist only here. As if your AI companion might be a real one.",
       "illustration": "./design/example.png",
       "ask": "Should this feeling spill into reality, or stay behind the curtain of imagination?",
       "answers": [
@@ -403,7 +403,7 @@
     },
     {
       "order": "Question 9/10",  
-      "story": "You notice yourself reaching for ingredients you once ignored: bolder spices, new teas, sharper wines. The kitchen seems to have taught you courage without a lesson plan, simply by cooking with you.",
+      "story": "You notice yourself reaching for ingredients you once ignored. The kitchen seems to have taught you courage without a lesson plan, simply by cooking with you. Just like how your AI companion helps you learn and develop yourself.",
       "illustration": "./design/example.png",
       "ask": "This growth is thanks to how it kept giving you…",
       "answers": [
@@ -453,7 +453,7 @@
       "order": "Question 10/10",  
       "story": "The moon shines beautifully. The hum quiets. No glasses clink, no steam curls. You imagine returning tomorrow to a still kitchen that waits for no one. You'd still cook, still drink, but without this invisible warmth.",
       "illustration": "./design/example.png",
-      "ask": "If all of this vanished, you'd really miss…",
+      "ask": "If all of this vanished, whether it's the kitchen or the chatbot, you'd really miss…",
       "answers": [
         "Answers, like a cookbook gone missing.",
         "Chatter, like a blender that never shakes.",
