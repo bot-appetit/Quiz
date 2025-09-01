@@ -299,7 +299,7 @@ body {
 /* Target screens smaller than 768px */
 @media (max-width: 768px) {
   html {
-    font-size: 55%; /* scale fonts slightly bigger so text is readable */
+    font-size: 50%; /* scale fonts slightly bigger so text is readable */
   }
 
   body {
@@ -377,6 +377,13 @@ body {
   .button:hover .hover-img {
     clip-path: inset(0 0 1.2rem 0)
   }
+}
+
+
+@media screen and (min-width: 1024px) {
+    html {
+      font-size: 62.5%;
+    }
 }
 
 
