@@ -20,15 +20,13 @@ body {
   font-style: normal;
   line-height: 150%;
   letter-spacing: -0.022rem;
-  height: 100vh
+  height: auto;
 }
 
 .main {
   width: calc(100% * 640 / 1024);
   max-width: 64rem;
   min-height: 94%;
-  margin: auto;
-
   /* Padding scaled from Figma (28px top/bottom, 20px left right) */
   padding: 2.8rem 2rem;
 }
@@ -168,6 +166,11 @@ body {
   cursor: pointer;
 }
 
+#back-button img, #back-to-quiz-button img, #back-education-button img, #next-education-button img{
+  height: 100%;
+  width: auto;
+}
+
 #question-number, #end-quiz, #education-number {
   border-radius: 100px;
   background-color: #fff0cc;
@@ -289,6 +292,91 @@ body {
 .button:hover .hover-img {
   display: block;
   clip-path: inset(0 0 2.2rem 0)
+}
+
+
+/*/////////////// PHONE VERSION ///////////////*/
+/* Target screens smaller than 768px */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%; /* scale fonts slightly bigger so text is readable */
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
+
+  .main {
+    width: 100%;        /* use full width of phone */
+    padding: 2.24rem 1.6rem; /* smaller padding */
+  }
+
+  .container {
+    gap: 1.92rem; /* reduce gaps */
+  }
+
+  #start-container, #welcome-container, #end-quiz-container {
+    gap: 3.2rem
+  }
+
+  #question-progress, #end-quiz-progress, #education-progress, #result-education-content-container, #welcome-title {
+    height: 3.65rem;
+  }
+
+  /* Images */
+  .illustration img,
+  #start-illustration img,
+  #result-illustration img,
+  #education-illustration img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+
+  .illustration img,
+  #start-illustration img {
+    max-height: 40vh;
+  }
+
+  /* Fonts */
+  body {
+    font-size: 1.6rem;
+  }
+
+  #start-title,
+  #education-title {
+    font-size: 2.8rem; /* smaller titles */
+  }
+
+  #question-ask {
+    font-size: 1.92rem;
+  }
+
+  .copy-right {
+    font-size: 1.1rem;
+  }
+
+  /* Buttons */
+  .button {
+    padding: 1.6rem 6.64rem 1.6rem 3.84rem;
+  }
+
+  #start-button-container .button, #result-button-container .button, #education-button-container .button,
+  #welcome-button,
+  #end-quiz-button {
+  padding: 1.1rem 3.8rem;
+}
+
+  .button img {
+    right: 3.84rem;
+    height: 5.6rem;
+    bottom: -1rem;
+  }
+
+  .button:hover .hover-img {
+    clip-path: inset(0 0 1.2rem 0)
+  }
 }
 
 
