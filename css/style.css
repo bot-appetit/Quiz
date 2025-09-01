@@ -72,10 +72,10 @@ body {
 }
 
 #start-content {
-  gap: 11px
+  gap: 12px
 }
 
-#start-content .title-font {
+#start-title {
   font-size: 36px;
 }
 
