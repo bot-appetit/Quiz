@@ -359,7 +359,7 @@ body {
 
   /* Buttons */
   .button {
-    padding: 1.6rem 6.64rem 1.6rem 3.84rem;
+    padding: 1.6rem 3.84rem 1.6rem 3.84rem;
   }
 
   #start-button-container .button, #result-button-container .button, #education-button-container .button,
