@@ -388,7 +388,11 @@ body {
 /* Desktop */
 @media screen and (min-height: 1201px) {
   html {
-    font-size: 57%; /* ~10px per rem */
+    font-size: 62.5%; /* ~10px per rem */
+  };
+
+  .main {
+    max-width: 70rem;
   }
 }
 
