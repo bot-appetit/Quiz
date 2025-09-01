@@ -1,0 +1,28 @@
+{
+  "education": [
+    {
+      "order": "1/6",
+      "illustration": "./design/education/p1.png"
+    },
+    {
+      "order": "2/6",
+      "illustration": "./design/education/p2.png"
+    },
+    {
+      "order": "3/6",
+      "illustration": "./design/education/p3.png"
+    },
+    {
+      "order": "4/6",
+      "illustration": "./design/education/p4.png"
+    },
+    {
+      "order": "5/6",
+      "illustration": "./design/education/p5.png"
+    },
+    {
+      "order": "6/6",
+      "illustration": "./design/education/p6.png"
+    }
+  ]
+}
