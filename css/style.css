@@ -296,8 +296,8 @@ body {
 
 
 /*/////////////// PHONE VERSION ///////////////*/
-/* Target screens smaller than 768px */
-@media screen and (max-height: 700px) {
+/* Phone screen */
+@media screen and (max-height: 999px) {
   html {
     font-size: 50%; /* scale fonts slightly bigger so text is readable */
   }
@@ -379,7 +379,7 @@ body {
   }
 }
 
-@media screen and (min-height: 701px) and (max-height: 1200px){
+@media screen and (min-height: 1000px) and (max-height: 1200px){
     html {
       font-size: 45%;
     }
