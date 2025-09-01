@@ -394,10 +394,6 @@ body {
     display: block;
     clip-path: inset(0 0 2.2rem 0);
   }
-
-  .button:hover .hover-img {
-    clip-path: inset(0 0 1.2rem 0);
-  }
 }
 
 /* Desktop */
@@ -422,10 +418,6 @@ body {
   .button:hover .hover-img {
     display: block;
     clip-path: inset(0 0 2.2rem 0);
-  }
-
-  .button:hover .hover-img {
-    clip-path: inset(0 0 1.2rem 0);
   }
 }
 
@@ -453,7 +445,4 @@ body {
     clip-path: inset(0 0 2.2rem 0);
   }
 
-  .button:hover .hover-img {
-    clip-path: inset(0 0 1.2rem 0);
-  }
 }
