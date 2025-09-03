@@ -401,11 +401,3 @@ function retakeButtonControl(quizData) {
       $("#education-button-container").css("display", "flex");
     });
 }
-
-
-function buttonMovement() {
-  $(".button").click(function() {
-    $(this).toggleClass('active');
-  })
-
-}
