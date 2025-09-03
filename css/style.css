@@ -285,6 +285,10 @@ body {
   width: auto;
 }
 
+.hover-img {
+    display: none;
+  }
+
 /*/////////////// PHONE VERSION ///////////////*/
 /* Phone screen */
 @media screen and (max-height: 999px) and (max-width: 600px) {
@@ -377,10 +381,6 @@ body {
     font-size: 45%;
   }
 
-  .hover-img {
-    display: none;
-  }
-
   .button:hover {
     background-color: #ffe099;
     box-shadow: inset 0.2rem 0.2rem 0 0.4rem black;
@@ -401,11 +401,10 @@ body {
   html {
     font-size: 57%; 
   }
+}
 
-  .hover-img {
-    display: none;
-  }
-
+/* Styles for devices with fine pointers (e.g., mouse) */
+@media (hover: hover) and (pointer: fine) {
   .button:hover {
     background-color: #ffe099;
     box-shadow: inset 0.2rem 0.2rem 0 0.4rem black;
@@ -418,5 +417,22 @@ body {
   .button:hover .hover-img {
     display: block;
     clip-path: inset(0 0 2.2rem 0);
+  }
+}
+
+/* Styles for devices with coarse pointers (e.g., touch) */
+@media (hover: none) and (pointer: coarse) {
+  .button:active {
+    background-color: #ffe099;
+    box-shadow: inset 0.2rem 0.2rem 0 0.4rem black;
+  }
+
+  .button:active .not-hover-img {
+    display: none;
+  }
+
+  .button:active .hover-img {
+    display: block;
+    clip-path: inset(0 0 1.2rem 0);
   }
 }
